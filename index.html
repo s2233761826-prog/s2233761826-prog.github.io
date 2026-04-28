@@ -162,6 +162,27 @@
       box-shadow: 0 10px 24px rgba(31, 41, 51, 0.14);
     }
 
+    .small-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 18px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--accent);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 650;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .small-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(31, 41, 51, 0.10);
+      border-color: #cbbca7;
+    }
+
     .hero-card {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -259,6 +280,18 @@
       grid-column: span 2;
     }
 
+    .tile.coming-soon {
+      background: rgba(255, 255, 255, 0.48);
+      border-color: rgba(222, 215, 202, 0.75);
+      box-shadow: none;
+    }
+
+    .tile.coming-soon h3,
+    .tile.coming-soon p,
+    .tile.coming-soon li {
+      opacity: 0.72;
+    }
+
     .tag {
       display: inline-block;
       padding: 5px 10px;
@@ -268,6 +301,11 @@
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 0.78rem;
       margin-bottom: 18px;
+    }
+
+    .tag.light-tag {
+      background: rgba(239, 226, 211, 0.52);
+      color: rgba(124, 74, 33, 0.78);
     }
 
     .tile h3 {
@@ -538,6 +576,7 @@
             The Chessplayer collects chess teaching materials, GeoGuessr guides, practical experience posts,
             and browser/user-script tools. The goal is to turn scattered practice into clear, reusable knowledge.
           </p>
+          <a class="small-button" href="updates.html">See latest updates</a>
         </article>
 
         <article class="tile">
@@ -562,17 +601,17 @@
       <div class="list">
         <div class="list-item">
           <strong>Chess teaching notes</strong>
-          <span>Opening principles, tactics, endgames, and training methods.</span>
+          <span>Coming soon.</span>
         </div>
 
         <div class="list-item">
           <strong>GeoGuessr experience posts</strong>
-          <span>Country guides, region guessing, NMPZ notes, and map-specific analysis.</span>
+          <span>Country notes, NMPZ thinking, personal records, and map-specific analysis.</span>
         </div>
 
         <div class="list-item">
           <strong>Extensions and scripts</strong>
-          <span>Tools that reduce repetitive work in map-making and practice.</span>
+          <span>Selected tools and userscripts will be added gradually.</span>
         </div>
       </div>
     </section>
@@ -580,26 +619,17 @@
     <section id="chess">
       <div class="section-header">
         <h2>Chess</h2>
-        <p>Teaching material and structured chess improvement notes.</p>
+        <p>Chess content is planned, but this section is not ready yet.</p>
       </div>
 
       <div class="grid">
-        <article class="tile">
-          <span class="tag">Beginner</span>
-          <h3>Basic principles</h3>
-          <p>Development, king safety, center control, piece activity, and common beginner mistakes.</p>
-        </article>
-
-        <article class="tile">
-          <span class="tag">Training</span>
-          <h3>Tactical vision</h3>
-          <p>Pins, forks, skewers, discovered attacks, deflection, mating patterns, and calculation habits.</p>
-        </article>
-
-        <article class="tile">
-          <span class="tag">Games</span>
-          <h3>Game reviews</h3>
-          <p>Annotated games and lessons from real positions. Replace this with links once posts are ready.</p>
+        <article class="tile coming-soon">
+          <span class="tag light-tag">Coming Soon</span>
+          <h3>Chess Notes</h3>
+          <p>
+            Future chess content may include beginner lessons, tactical training notes,
+            annotated games, and structured improvement plans.
+          </p>
         </article>
       </div>
     </section>
@@ -607,7 +637,7 @@
     <section id="geoguessr">
       <div class="section-header">
         <h2>GeoGuessr</h2>
-        <p>Experience posts, country notes, NMPZ thinking, and map-making workflows.</p>
+        <p>Experience posts, country notes, NMPZ thinking, and personal records.</p>
       </div>
 
       <div class="grid">
@@ -620,12 +650,12 @@
           </p>
         </a>
 
-        <article class="tile large">
-          <span class="tag">Guide</span>
-          <h3>NMPZ learning notes</h3>
+        <article class="tile large coming-soon">
+          <span class="tag light-tag">Coming Soon</span>
+          <h3>NMPZ Notes</h3>
           <p>
-            Notes on how to read road quality, vegetation, architecture, camera generation, sky,
-            terrain, and country-specific meta without moving.
+            Future notes on first impressions, no-info rounds, 50/50 decisions,
+            official-map experience, and mistake reviews.
           </p>
         </article>
 
@@ -636,14 +666,6 @@
             A personal archive of GeoGuessr NMPZ PBs, official-map scores, recorded runs, and memorable no-info rounds.
           </p>
         </a>
-
-        <article class="tile">
-          <span class="tag">Maps</span>
-          <h3>Map-making</h3>
-          <p>
-            Workflows for MMA, Vali, JSON generation, tag systems, and balanced practice maps.
-          </p>
-        </article>
 
         <a class="tile" href="countries-notes.html">
           <span class="tag">Countries</span>
