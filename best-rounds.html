@@ -69,9 +69,16 @@
 
     .columns {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1px 1fr;
       gap: 24px;
       align-items: start;
+    }
+
+    .divider {
+      width: 1px;
+      height: 100%;
+      background: var(--line);
+      opacity: 0.9;
     }
 
     .column {
@@ -126,7 +133,14 @@
     h2 {
       font-size: 1.45rem;
       color: var(--dark);
-      margin-bottom: 8px;
+      margin-bottom: 3px;
+    }
+
+    .date-line {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 10px;
     }
 
     .meta,
@@ -176,6 +190,10 @@
         grid-template-columns: 1fr;
       }
 
+      .divider {
+        display: none;
+      }
+
       .column-title {
         font-size: 1.75rem;
       }
@@ -210,11 +228,11 @@
             <div class="tag-row">
               <span class="tag">NMPZ</span>
               <span class="tag">Personal Best</span>
-              <span class="tag">Video Recorded</span>
             </div>
 
             <h2>An Arbitrary World</h2>
-            <p class="meta">Mode: NMPZ · Score: 23,341 · Date: 2026-04-28</p>
+            <p class="date-line">Date: 2026-04-28</p>
+            <p class="meta">Score: 23,341</p>
             <p class="notes">
               Current personal best on An Arbitrary World NMPZ. The run was recorded and can be viewed through the replay link below.
             </p>
@@ -228,6 +246,8 @@
         </article>
       </div>
 
+      <div class="divider"></div>
+
       <div class="column">
         <div>
           <h2 class="column-title">Country Specific</h2>
@@ -238,12 +258,12 @@
           <div>
             <div class="tag-row">
               <span class="tag">NMPZ</span>
-              <span class="tag">Official Map</span>
               <span class="tag">World Rank #3</span>
             </div>
 
             <h2>A Balanced Cambodia</h2>
-            <p class="meta">Mode: NMPZ · Score: 15,429 · World Rank: #3</p>
+            <p class="date-line">Date: 2026-04-16</p>
+            <p class="meta">Score: 15,429 · World Rank: #3</p>
             <p class="notes">
               Ranked #3 on the historical leaderboard at the time of the run; a major Cambodia benchmark.
             </p>
@@ -260,12 +280,12 @@
           <div>
             <div class="tag-row">
               <span class="tag">NMPZ</span>
-              <span class="tag">Speedrun / Official Map</span>
               <span class="tag">World Rank #1</span>
             </div>
 
             <h2>Supersonic Ireland</h2>
-            <p class="meta">Mode: NMPZ · Score: 14,584 · World Rank: #1 · Time: 1:11</p>
+            <p class="date-line">Date: 2026-04-13</p>
+            <p class="meta">Score: 14,584 · World Rank: #1 · Time: 1:11</p>
             <p class="notes">
               A notable high-score run on Supersonic Ireland NMPZ.
             </p>
