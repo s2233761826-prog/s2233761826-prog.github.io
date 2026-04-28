@@ -76,7 +76,7 @@
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 24px;
+      padding: 28px;
       box-shadow: var(--shadow);
     }
 
@@ -88,17 +88,25 @@
       color: var(--accent);
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 0.78rem;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     h2 {
-      font-size: 1.45rem;
+      font-size: 1.55rem;
       color: var(--dark);
-      margin-bottom: 10px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      color: var(--dark);
+      margin: 18px 0 8px;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     ul {
       padding-left: 20px;
+      margin-bottom: 6px;
     }
 
     li {
@@ -106,6 +114,17 @@
       color: var(--muted);
       font-size: 0.98rem;
       margin-bottom: 6px;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(100% - 24px, 900px);
+        padding-top: 32px;
+      }
+
+      .update-card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
@@ -124,54 +143,37 @@
     <section class="updates">
       <article class="update-card">
         <span class="date">2026-04-28</span>
-        <h2>Beginner Notes improved</h2>
-        <ul>
-          <li>Optimized the Beginner Notes page layout and image display.</li>
-          <li>Added source link to the original Zhihu answer.</li>
-          <li>Added a floating back-to-top button for easier reading on long articles.</li>
-          <li>Updated the page with supporting GeoGuessr / 图寻 images.</li>
-        </ul>
-      </article>
+        <h2>Website launch and first major updates</h2>
 
-      <article class="update-card">
-        <span class="date">2026-04-28</span>
-        <h2>Homepage structure updated</h2>
+        <h3>Site structure</h3>
         <ul>
-          <li>Reorganized the GeoGuessr section into a cleaner two-column layout.</li>
-          <li>Moved Countries Notes above Personal Records for better navigation.</li>
-          <li>Marked NMPZ Notes as Coming Soon.</li>
-          <li>Updated the Chess section with Chess News, Chess Tutorials, and Chess Plus as future categories.</li>
+          <li>Created the first working version of The Chessplayer personal website.</li>
+          <li>Added core sections for About, Working On, Chess, GeoGuessr, Extensions, and Contact.</li>
+          <li>Added Latest Updates page for tracking future website changes.</li>
+          <li>Reorganized the homepage layout for cleaner navigation.</li>
         </ul>
-      </article>
 
-      <article class="update-card">
-        <span class="date">2026-04-28</span>
-        <h2>Personal Records added</h2>
+        <h3>GeoGuessr pages</h3>
+        <ul>
+          <li>Added Beginner Notes page for GeoGuessr / 图寻 learning.</li>
+          <li>Improved Beginner Notes layout, image display, source link, and back-to-top navigation.</li>
+          <li>Added Countries Notes page as a hub for country-specific resources.</li>
+          <li>Added Ecuador Notes page with downloadable Ecuador map-making JSON.</li>
+        </ul>
+
+        <h3>Personal Records</h3>
         <ul>
           <li>Added Personal Records page for GeoGuessr NMPZ PBs and major runs.</li>
           <li>Added An Arbitrary World NMPZ PB: 23,341.</li>
           <li>Added A Balanced Cambodia NMPZ: 15,429, World Rank #3, with video link.</li>
           <li>Added Supersonic Ireland NMPZ: 14,584, World Rank #1, with video link.</li>
         </ul>
-      </article>
 
-      <article class="update-card">
-        <span class="date">2026-04-28</span>
-        <h2>Country notes pages added</h2>
+        <h3>Future sections</h3>
         <ul>
-          <li>Added Countries Notes page as a hub for country-specific GeoGuessr resources.</li>
-          <li>Added Ecuador Notes page with downloadable Ecuador map-making JSON.</li>
-          <li>Set Cambodia, Ireland, and China Mode notes as future pages.</li>
-        </ul>
-      </article>
-
-      <article class="update-card">
-        <span class="date">2026-04-28</span>
-        <h2>Website foundation built</h2>
-        <ul>
-          <li>Created the first working version of The Chessplayer personal website.</li>
-          <li>Added core sections for About, Working On, Chess, GeoGuessr, Extensions, and Contact.</li>
-          <li>Added Latest Updates page for tracking future website changes.</li>
+          <li>Marked NMPZ Notes as Coming Soon.</li>
+          <li>Updated the Chess section with Chess News, Chess Tutorials, and Chess Plus as future categories.</li>
+          <li>Set Cambodia, Ireland, and China Mode notes as future country pages.</li>
         </ul>
       </article>
     </section>
