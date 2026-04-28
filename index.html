@@ -260,6 +260,10 @@
       gap: 18px;
     }
 
+    .grid.two-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .tile {
       background: rgba(255, 255, 255, 0.72);
       border: 1px solid var(--line);
@@ -419,7 +423,8 @@
         flex-direction: column;
       }
 
-      .grid {
+      .grid,
+      .grid.two-col {
         grid-template-columns: 1fr;
       }
 
@@ -625,10 +630,28 @@
       <div class="grid">
         <article class="tile coming-soon">
           <span class="tag light-tag">Coming Soon</span>
-          <h3>Chess Notes</h3>
+          <h3>Chess News</h3>
           <p>
-            Future chess content may include beginner lessons, tactical training notes,
-            annotated games, and structured improvement plans.
+            Future posts may include tournament reactions, training updates,
+            chess-related thoughts, and selected news highlights.
+          </p>
+        </article>
+
+        <article class="tile coming-soon">
+          <span class="tag light-tag">Coming Soon</span>
+          <h3>Chess Tutorials</h3>
+          <p>
+            Future tutorials may include beginner lessons, tactics, endgames,
+            practical training tips, and structured improvement guides.
+          </p>
+        </article>
+
+        <article class="tile coming-soon">
+          <span class="tag light-tag">Coming Soon</span>
+          <h3>Chess Plus</h3>
+          <p>
+            A future space for deeper chess projects, extra study materials,
+            curated resources, and other extended content.
           </p>
         </article>
       </div>
@@ -640,8 +663,8 @@
         <p>Experience posts, country notes, NMPZ thinking, and personal records.</p>
       </div>
 
-      <div class="grid">
-        <a class="tile large" href="beginner-notes.html">
+      <div class="grid two-col">
+        <a class="tile" href="beginner-notes.html">
           <span class="tag">Beginner</span>
           <h3>Beginner Notes</h3>
           <p>
@@ -650,7 +673,16 @@
           </p>
         </a>
 
-        <article class="tile large coming-soon">
+        <a class="tile" href="countries-notes.html">
+          <span class="tag">Countries</span>
+          <h3>Countries Notes</h3>
+          <p>
+            Notes and resources for Ecuador, Ireland, and Cambodia, including JSON files and
+            future country-specific writeups.
+          </p>
+        </a>
+
+        <article class="tile coming-soon">
           <span class="tag light-tag">Coming Soon</span>
           <h3>NMPZ Notes</h3>
           <p>
@@ -663,15 +695,8 @@
           <span class="tag">Archive</span>
           <h3>Personal Records</h3>
           <p>
-            A personal archive of GeoGuessr NMPZ PBs, official-map scores, recorded runs, and memorable no-info rounds.
-          </p>
-        </a>
-
-        <a class="tile" href="countries-notes.html">
-          <span class="tag">Countries</span>
-          <h3>Countries Notes</h3>
-          <p>
-            Notes and resources for Ecuador, Ireland, and Cambodia, including JSON files and future country-specific writeups.
+            A personal archive of GeoGuessr NMPZ PBs, official-map scores, recorded runs,
+            and memorable no-info rounds.
           </p>
         </a>
       </div>
